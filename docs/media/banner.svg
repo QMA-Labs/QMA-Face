@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<title id="title">QMA Face — face analysis you can inspect</title>
+<desc id="desc">An original interface illustration: soft orbital lines, a cloud symbol, and a facial landmark outline. Not a model output or a photograph.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#FAF9FF"/><stop offset="1" stop-color="#EBF5F4"/></linearGradient>
+  <linearGradient id="accent" x2="1" y2="1"><stop stop-color="#A398EF"/><stop offset="1" stop-color="#6554B4"/></linearGradient>
+</defs>
+<rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+<g fill="none" stroke="#DCD7F1"><ellipse cx="990" cy="215" rx="295" ry="130" transform="rotate(-22 990 215)"/><ellipse cx="990" cy="215" rx="268" ry="174" transform="rotate(18 990 215)"/></g>
+<circle cx="1124" cy="89" r="6" fill="#A79BDD"/><circle cx="763" cy="294" r="5" fill="#8FC9BB"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="70" y="91" font-size="17" letter-spacing="4" fill="#8474B0">QMA LABS / LOCAL AI</text>
+<text x="66" y="179" font-size="74" font-weight="600" fill="#45365F">QMA Face</text>
+<text x="70" y="226" font-size="27" fill="#716286">Face analysis you can inspect.</text>
+<text x="70" y="269" font-size="19" fill="#81788F">Visual reports. Local conversations. Your workspace.</text>
+<rect x="70" y="315" width="155" height="38" rx="19" fill="#E6DFF7"/><text x="92" y="340" font-size="15" fill="#6D5994">86 landmarks</text>
+<rect x="239" y="315" width="153" height="38" rx="19" fill="#DEF0EB"/><text x="259" y="340" font-size="15" fill="#4C8277">2 model roles</text>
+<rect x="406" y="315" width="183" height="38" rx="19" fill="#E9E3F8"/><text x="427" y="340" font-size="15" fill="#6D5994">Research preview</text>
+</g>
+<g transform="translate(845 62)">
+<rect x="0" y="0" width="269" height="294" rx="38" fill="white" stroke="#E4DDEF"/>
+<g fill="none" stroke="#AB9CD4" stroke-width="2.6" stroke-linecap="round">
+<path d="M76 96 Q76 53 133 44 Q191 53 191 96 L184 172 Q174 218 133 239 Q91 216 83 172 Z"/>
+<path d="M94 113 Q109 104 121 113 M147 113 Q161 104 175 113 M133 122 L125 153 Q133 161 141 153 M111 183 Q133 170 155 183 Q133 198 111 183"/>
+</g>
+<g fill="#86BDAE"><circle cx="76" cy="96" r="4"/><circle cx="133" cy="44" r="4"/><circle cx="191" cy="96" r="4"/><circle cx="83" cy="172" r="4"/><circle cx="184" cy="172" r="4"/><circle cx="133" cy="239" r="4"/><circle cx="94" cy="113" r="4"/><circle cx="121" cy="113" r="4"/><circle cx="147" cy="113" r="4"/><circle cx="175" cy="113" r="4"/><circle cx="125" cy="153" r="4"/><circle cx="141" cy="153" r="4"/><circle cx="111" cy="183" r="4"/><circle cx="155" cy="183" r="4"/></g>
+<path d="M217 38 C206 38 201 48 202 54 C188 55 187 75 203 77 H243 C260 77 261 56 247 54 C246 39 228 32 217 38Z" fill="url(#accent)"/>
+<circle cx="218" cy="61" r="2" fill="white"/><circle cx="236" cy="61" r="2" fill="white"/>
+</g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "version": "0.14.0",
+  "install_and_uninstall_passed": true,
+  "all_payload_files_verified": 352,
+  "installed_frozen_diagnostics_passed": true,
+  "actual_local_chat_device": "cuda",
+  "elapsed_seconds": 158.55
+}

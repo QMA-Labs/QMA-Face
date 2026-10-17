@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "counting_rule": "Two independently deployed product models; multimodal components are listed under their owning model. A bundle of independent detector/landmark/beauty networks is not a single face engine.",
+  "models": [
+    {
+      "role": "vision_chat",
+      "candidate": "Qwen3-VL-4B-Instruct-GGUF",
+      "status": "local_runtime_tested",
+      "license_declared": "Apache-2.0",
+      "redistribution": "pending_package_review",
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-GGUF",
+      "artifacts": [
+        {
+          "name": "Qwen3VL-4B-Instruct-Q4_K_M.gguf",
+          "component": "language",
+          "sha256": "66358cb18bb6b3b1b6675aa412c7a88ef01d228f481184d13668e5201c730a0a",
+          "bytes": 2497281664
+        },
+        {
+          "name": "mmproj-Qwen3VL-4B-Instruct-F16.gguf",
+          "component": "vision",
+          "sha256": "256f3a43bd4205ffef48d6b92715e1e70b5b0e9aef06522584967513a9985331",
+          "bytes": 836180256
+        }
+      ],
+      "evaluation_id": null,
+      "runtime_evaluation_id": "phase3-model-benchmark",
+      "supported_interface_languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "role": "face_engine",
+      "candidate": "QMA Face Engine research 0.14 (one shared ResNet-18)",
+      "status": "research_preview_not_production_validated",
+      "redistribution": "not_cleared",
+      "license_declared": "SCUT non-commercial research restrictions; final redistribution unresolved",
+      "source": "locally trained; see models/engine-evaluation.json",
+      "artifacts": [
+        {
+          "name": "qma-face-engine-research-v1.pt",
+          "sha256": "2001937b3fe9dacf907950e4b020764c51a505bbf113635e85829f41a36fe426",
+          "bytes": 45140263
+        }
+      ],
+      "trained_heads": [
+        "overall",
+        "landmarks"
+      ],
+      "requires_manual_face_crop": true,
+      "evaluation_id": null,
+      "research_evaluation_id": "refine014-comparison",
+      "component_scores": "not_available",
+      "visibility_detection": "not_available",
+      "model_count": 1
+    }
+  ],
+  "version": "0.14.0",
+  "distribution": "source_only_no_weights_no_private_documents_no_runtime"
+}

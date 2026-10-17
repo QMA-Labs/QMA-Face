@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "onnx_sha256": "5a6dd5eb5a95e49fbda1aff95da9bd017b69071a6c73b61b2b59cd18f5f153ef",
+  "source_checkpoint_sha256": "2001937b3fe9dacf907950e4b020764c51a505bbf113635e85829f41a36fe426",
+  "architecture": "qma-resnet18-multitask-v1",
+  "trained_heads": [
+    "overall",
+    "landmarks"
+  ],
+  "cam": "analytic_equivalent_of_normalized_positive_GradCAM_for_GAP_linear_sigmoid",
+  "runtime": "onnxruntime-cpu",
+  "production_validated": false,
+  "redistribution": "not_cleared",
+  "model_count": 1,
+  "parity": {
+    "heldout_images": 525,
+    "raw_score_max_abs_error": 9.5367431640625e-07,
+    "normalized_point_max_abs_error": 2.384185791015625e-07,
+    "gradcam_images": 12,
+    "gradcam_max_abs_error": 1.0013580322265625e-05,
+    "torch_median_ms": 17.714999999952852,
+    "onnx_median_ms": 10.857199999918521,
+    "note": "FP32 conversion parity, not new scientific accuracy validation"
+  }
+}

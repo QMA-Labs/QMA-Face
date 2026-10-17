@@ -1,0 +1,83 @@
+{
+  "status": "research_candidate_trained_not_production_validated",
+  "checkpoint_sha256": "2001937b3fe9dacf907950e4b020764c51a505bbf113635e85829f41a36fe426",
+  "test": {
+    "images": 525,
+    "overall_mae_1_to_5": 0.26194520677839006,
+    "overall_rmse_1_to_5": 0.3375180990020304,
+    "overall_pearson": 0.8765417752492477,
+    "landmark_mean_error_normalized_image_diagonal": 0.010279193957824083,
+    "landmark_metric_definition": "Euclidean distance after independent x/width,y/height normalization, divided by sqrt(2); in-bounds annotated points only. Not interocular NME.",
+    "auxiliary_heads": {
+      "components": {
+        "labeled_values": 0,
+        "metric": "mae",
+        "value": null
+      },
+      "region": {
+        "labeled_values": 0,
+        "metric": "mae",
+        "value": null
+      },
+      "visibility": {
+        "labeled_values": 0,
+        "metric": "accuracy",
+        "value": null
+      }
+    },
+    "refinement_region_errors": {
+      "outline": 0.014909456910654192,
+      "brows": 0.009375361252043928,
+      "eyes": 0.007726258399142396,
+      "nose": 0.008095071839966944,
+      "mouth": 0.009552832276870806
+    }
+  },
+  "validation": {
+    "images": 568,
+    "overall_mae_1_to_5": 0.26938650599667724,
+    "overall_rmse_1_to_5": 0.35442169474776536,
+    "overall_pearson": 0.8589516996678712,
+    "landmark_mean_error_normalized_image_diagonal": 0.01007784537488962,
+    "landmark_metric_definition": "Euclidean distance after independent x/width,y/height normalization, divided by sqrt(2); in-bounds annotated points only. Not interocular NME.",
+    "auxiliary_heads": {
+      "components": {
+        "labeled_values": 0,
+        "metric": "mae",
+        "value": null
+      },
+      "region": {
+        "labeled_values": 0,
+        "metric": "mae",
+        "value": null
+      },
+      "visibility": {
+        "labeled_values": 0,
+        "metric": "accuracy",
+        "value": null
+      }
+    },
+    "refinement_region_errors": {
+      "outline": 0.014675080226931038,
+      "brows": 0.009234428452491813,
+      "eyes": 0.007447478759863322,
+      "nose": 0.007808415389301675,
+      "mouth": 0.009506949612175599
+    }
+  },
+  "trained_heads": [
+    "overall",
+    "landmarks"
+  ],
+  "production_gate": {
+    "identity_separation": false,
+    "component_labels": false,
+    "visibility_labels": false,
+    "detection_labels_and_negatives": false,
+    "redistribution_cleared": false,
+    "robustness_and_population_evaluation": false
+  },
+  "production_validated": false,
+  "weights_included": false,
+  "note": "Historical local research evaluation, not a new blind external validation."
+}

@@ -1,0 +1,7 @@
+QMA Face — source build distribution notice
+
+This is a research preview. Publishing project source does not clear rights to model weights, training datasets, runtime binaries, personal documents, or third-party dependencies.
+
+The public source tree carries no general project software license grant at this stage. Read NOTICE.md and the separate upstream licenses. Before distributing any installer, obtain the necessary rights and include all required notices. Do not redistribute the separately created personal installer containing private PDFs.
+
+Ratings are subjective research estimates. Landmark/pose/lighting errors and crop sensitivity remain. There is no validated 95% accuracy, calibrated confidence, component beauty rating, or character/trustworthiness classification.

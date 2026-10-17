@@ -1,0 +1,68 @@
+{
+  "baseline": {
+    "validation": {
+      "images": 568,
+      "score_mae_1_to_5": 0.26938650599667724,
+      "landmark_mean_normalized_diagonal_error": 0.01106799336176523,
+      "landmark_p95_normalized_diagonal_error": 0.017302491050213576,
+      "landmark_interocular_nme": 0.06271218652771392,
+      "region_mean_normalized_diagonal_error": {
+        "outline": 0.015345342151499288,
+        "brows": 0.010233595556559854,
+        "eyes": 0.008735960503567902,
+        "nose": 0.008972200780654405,
+        "mouth": 0.010437853262156353
+      }
+    },
+    "test": {
+      "images": 525,
+      "score_mae_1_to_5": 0.26194520677839006,
+      "landmark_mean_normalized_diagonal_error": 0.01126308491098739,
+      "landmark_p95_normalized_diagonal_error": 0.01744085475802421,
+      "landmark_interocular_nme": 0.06339593287734759,
+      "region_mean_normalized_diagonal_error": {
+        "outline": 0.015642479653691962,
+        "brows": 0.010396844091869535,
+        "eyes": 0.008934815270560129,
+        "nose": 0.009233855406886765,
+        "mouth": 0.010437467215316637
+      }
+    }
+  },
+  "candidate": {
+    "validation": {
+      "images": 568,
+      "score_mae_1_to_5": 0.26938650599667724,
+      "landmark_mean_normalized_diagonal_error": 0.01007784537488962,
+      "landmark_p95_normalized_diagonal_error": 0.016503777354955663,
+      "landmark_interocular_nme": 0.05706699692617945,
+      "region_mean_normalized_diagonal_error": {
+        "outline": 0.014675080226931038,
+        "brows": 0.009234428452491813,
+        "eyes": 0.007447478759863322,
+        "nose": 0.007808415389301675,
+        "mouth": 0.009506949612175599
+      }
+    },
+    "test": {
+      "images": 525,
+      "score_mae_1_to_5": 0.26194520677839006,
+      "landmark_mean_normalized_diagonal_error": 0.010279193957824083,
+      "landmark_p95_normalized_diagonal_error": 0.01700191982090469,
+      "landmark_interocular_nme": 0.05778486791111174,
+      "region_mean_normalized_diagonal_error": {
+        "outline": 0.014909456910654192,
+        "brows": 0.009375361252043928,
+        "eyes": 0.007726258399142396,
+        "nose": 0.008095071839966944,
+        "mouth": 0.009552832276870806
+      }
+    }
+  },
+  "blind_external_evaluation": false,
+  "identity_split_verified": false,
+  "new_real_images": 0,
+  "additional_views_are_2d_augmentation_not_3d_pose_labels": true,
+  "existing_test_split_previously_evaluated": true,
+  "validation_replacement_gate": true
+}
