@@ -1,28 +1,64 @@
 <div align="center">
 
-![QMA Face — face analysis you can inspect](docs/media/banner.svg)
+![QMA Face — Explore the face. Inspect the evidence.](docs/media/hero-observatory.png)
 
 # QMA Face
 
-### Face analysis you can inspect. AI conversations that stay on your machine.
+### A face starts the conversation. Evidence shapes the answer.
 
-A native Windows research desktop that brings facial landmarks, visual explanations, local vision chat, and multilingual translation into one calm workspace.
+**Explore the face. Inspect the evidence. Keep asking.**
 
-![Version](https://img.shields.io/badge/version-0.14.0-8273D9?style=flat-square)
-![Platform](https://img.shields.io/badge/platform-Windows_x64-65558E?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3.11%E2%80%933.13-3776AB?style=flat-square)
-![Model roles](https://img.shields.io/badge/model_roles-2-409D8D?style=flat-square)
-![Status](https://img.shields.io/badge/status-research_preview-C59439?style=flat-square)
+A local research workspace for people who want to look closer — at the image, the model, and the reasoning around its output.
+
+[![Source checks](https://github.com/QMA-Labs/QMA-Face/actions/workflows/source-checks.yml/badge.svg)](https://github.com/QMA-Labs/QMA-Face/actions/workflows/source-checks.yml)
+![Research preview](https://img.shields.io/badge/0.14.0-RESEARCH_PREVIEW-9B88D9?style=flat-square&labelColor=141923)
+![Local inference](https://img.shields.io/badge/INFERENCE-LOCAL-87CFC5?style=flat-square&labelColor=141923)
 
 [Explore the experience](#the-experience) · [Run the source](#run-the-source) · [Research results](#measured-progress) · [Architecture](#two-model-roles-one-workspace) · [Roadmap](#what-comes-next)
 
 </div>
 
-## A clearer way to explore facial AI
+## A different way to look
 
-Most face-analysis demos end at a number. **QMA Face gives you the workspace around it:** inspect the point map, correct misplaced landmarks, explore measured ratios, compare photos, examine model sensitivity, and continue the conversation locally.
+**A photograph opens a whole chain of questions.** Where did the model place the eye points? What changed when the crop changed? Which measurements need correction? What does a cited source actually support?
 
-Built with a light cloud-inspired interface, bundled typography, animated processing, and progressive controls, the experience starts simply: **New chat** or **My chats**.
+QMA Face brings those questions into one continuous experience. Move from a photo to its landmark map, from the map to a visual report, and from the report to a local conversation. Look closer, adjust, compare, and ask again.
+
+The vision is **an explorable relationship between image, model, and evidence** — with the controls and uncertainty visible to the person using it.
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 01 / Look closer
+
+**Make the image inspectable.**
+
+Expand the face map. Zoom into its 86 points. Correct their placement and explore the geometry recorded in this photograph.
+
+</td>
+<td width="33%" valign="top">
+
+### 02 / Ask better
+
+**Keep the investigation moving.**
+
+Continue with local vision chat, examine source passages, and translate questions between Persian, English, and French.
+
+</td>
+<td width="33%" valign="top">
+
+### 03 / Stay grounded
+
+**See the limits with the result.**
+
+Inspect model sensitivity, preserve the original photo, and see where a result remains experimental or needs manual review.
+
+</td>
+</tr>
+</table>
+
+**A quiet interface. A deeper investigation.** The light cloud-inspired desktop begins with just **New chat** and **My chats**, revealing the tools as you need them.
 
 > **Source-only research release.** This repository contains the application and training code. Model weights, inference binaries, training images, personal PDFs, and the private installer are not included. The interface can open without model assets; actual chat and face inference require the corresponding local files. See [setup](docs/SETUP.md).
 
@@ -30,7 +66,7 @@ Built with a light cloud-inspired interface, bundled typography, animated proces
 
 ![Actual QMA Face home screen](docs/media/home.png)
 
-*Actual application screenshot. The banner is an illustration; no portrait or private chat is published here.*
+*Actual application screenshot. The observatory banner is original AI-generated brand artwork, not a scientific output or a screenshot. No real portrait or private chat is published here.*
 
 | Capability | What you can do |
 | --- | --- |
@@ -48,6 +84,9 @@ Built with a light cloud-inspired interface, bundled typography, animated proces
 The main interface and assistant use **English and French**. Persian is supported through the translator and right-to-left text handling. Translation is performed through prompting, not language-model retraining.
 
 ## Two model roles, one workspace
+
+<details>
+<summary><strong>Under the surface — how images, models, and evidence connect</strong></summary>
 
 ```mermaid
 flowchart LR
@@ -69,6 +108,8 @@ flowchart LR
 2. **Face engine:** one shared ResNet-18 with trained overall-rating and 86-landmark heads. ONNX Runtime runs the compact face engine on CPU; PyTorch supports research training.
 
 There is no additional detector, restoration, embedding, OCR, age, or personality model hidden behind these two roles. Face selection and visibility depend on user confirmation. See the [model setup](docs/SETUP.md#model-assets) and [research notes](docs/RESEARCH.md).
+
+</details>
 
 ## Measured progress
 
@@ -153,9 +194,11 @@ docs/          Setup, research, privacy and public screenshots
 
 Ideas, careful bug reports, and reproducible benchmarks are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Avoid uploading real people's face photos, private documents, or chat histories in issues.
 
-### Follow the project
+### Follow a more inspectable kind of facial AI
 
-If you care about local AI, inspectable computer vision, or thoughtful desktop interfaces, **star the repository** and follow [QMA Labs](https://github.com/QMA-Labs) for progress.
+**Bring your curiosity. Follow the evidence.**
+
+If this direction speaks to you, **star QMA Face** and follow [QMA Labs](https://github.com/QMA-Labs). Help shape the next chapter through thoughtful issues, reproducible experiments, and honest feedback.
 
 ---
 
