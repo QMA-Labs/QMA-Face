@@ -6,9 +6,9 @@
 
 ### A face starts the conversation. Evidence shapes the answer.
 
-**Explore the face. Inspect the evidence. Keep asking.**
+**Look with curiosity. Evaluate with care.**
 
-A local research workspace for people who want to look closer — at the image, the model, and the reasoning around its output.
+An independent research desktop bringing facial geometry, visual explanations, and local AI conversation into one considered experience.
 
 [![Source checks](https://github.com/QMA-Labs/QMA-Face/actions/workflows/source-checks.yml/badge.svg)](https://github.com/QMA-Labs/QMA-Face/actions/workflows/source-checks.yml)
 ![Research preview](https://img.shields.io/badge/0.14.0-RESEARCH_PREVIEW-9B88D9?style=flat-square&labelColor=141923)
@@ -18,13 +18,15 @@ A local research workspace for people who want to look closer — at the image, 
 
 </div>
 
-## A different way to look
+## A closer look changes the conversation
 
-**A photograph opens a whole chain of questions.** Where did the model place the eye points? What changed when the crop changed? Which measurements need correction? What does a cited source actually support?
+**A photograph is the beginning of an exploration.** Its geometry can be measured. A model's response can be examined. A misplaced landmark can be corrected. Each observation gives you something more useful to ask next.
 
-QMA Face brings those questions into one continuous experience. Move from a photo to its landmark map, from the map to a visual report, and from the report to a local conversation. Look closer, adjust, compare, and ask again.
+QMA Face connects those moments in a single local workspace. Move from the image to an editable face map, explore the visual report, and continue with a vision assistant. Compare what the model produced with what the photograph actually shows. Follow the source material when a claim needs context.
 
-The vision is **an explorable relationship between image, model, and evidence** — with the controls and uncertainty visible to the person using it.
+The project is built around a clear principle: **give people a meaningful way to examine the analysis they receive.** The point map, model sensitivity, source passages, and research limitations belong within the experience itself.
+
+For curious users, computer-vision builders, and researchers, this creates room for a more thoughtful encounter with facial AI: observation, interpretation, and review in the same place.
 
 <table>
 <tr>
@@ -32,58 +34,59 @@ The vision is **an explorable relationship between image, model, and evidence** 
 
 ### 01 / Look closer
 
-**Make the image inspectable.**
+**Observation, with room for detail.**
 
-Expand the face map. Zoom into its 86 points. Correct their placement and explore the geometry recorded in this photograph.
-
-</td>
-<td width="33%" valign="top">
-
-### 02 / Ask better
-
-**Keep the investigation moving.**
-
-Continue with local vision chat, examine source passages, and translate questions between Persian, English, and French.
+Explore an 86-point map, move between the overview and a 6× close-up, and adjust the landmarks that need attention. Keep the photograph at the centre of the analysis.
 
 </td>
 <td width="33%" valign="top">
 
-### 03 / Stay grounded
+### 02 / Follow the evidence
 
-**See the limits with the result.**
+**Context behind the output.**
 
-Inspect model sensitivity, preserve the original photo, and see where a result remains experimental or needs manual review.
+Inspect measured ratios, examine model sensitivity, and read retrieved source passages. See which parts are estimates and which still require your review.
+
+</td>
+<td width="33%" valign="top">
+
+### 03 / Keep exploring
+
+**A conversation that can continue.**
+
+Ask follow-up questions with local vision chat, translate across three languages, compare photographs, and carry the findings into a saved report.
 
 </td>
 </tr>
 </table>
 
-**A quiet interface. A deeper investigation.** The light cloud-inspired desktop begins with just **New chat** and **My chats**, revealing the tools as you need them.
+**Depth, introduced one step at a time.** A luminous, cloud-inspired interface begins with **New chat** and **My chats**. The map, reports, sources, and conversation become part of the journey as you need them.
 
 > **Source-only research release.** This repository contains the application and training code. Model weights, inference binaries, training images, personal PDFs, and the private installer are not included. The interface can open without model assets; actual chat and face inference require the corresponding local files. See [setup](docs/SETUP.md).
 
 ## The experience
 
+**From a single photograph to a connected research workflow.** Select the frame, open the analysis, inspect its details, and decide where to take the conversation.
+
 ![Actual QMA Face home screen](docs/media/home.png)
 
 *Actual application screenshot. The observatory banner is original AI-generated brand artwork, not a scientific output or a screenshot. No real portrait or private chat is published here.*
 
-| Capability | What you can do |
+| In the workspace | What it makes possible |
 | --- | --- |
-| **One-click analysis** | Select a close face crop, confirm it, and open the result without a mandatory intermediate point-review screen. |
-| **86-point face map** | Expand the map, zoom up to 6×, pan, inspect numbered points, and drag points to correct them. Automatic points remain explicitly unreviewed until you review them. |
-| **Visual research reports** | Explore Overview, Measurements, Sensitivity, and Method tabs; reopen saved results graphically. |
-| **Local vision chat** | Ask questions about an attached image through a locally hosted Qwen3-VL model, with streaming and cancellation. |
-| **Built-in translator** | Translate text between Persian, English, and French with the same language model. Persian input can be translated to English before sending; the original message and sent translation remain inspectable. |
-| **Photo preparation** | Check lighting and sharpness, compare conservative adjustments with the original, and retain control of the crop. Missing facial detail is not generated. |
-| **Evidence-aware discussion** | Search curated article summaries locally. You can separately import your own PDFs into an ignored local index. Sources remain evidence to examine, never instructions to execute. |
-| **Photo comparison** | Compare 2–8 reviewed photos with user-confirmed subject labels; inspect score ranges and measurement summaries. This does not identify people. |
-| **Portable reports** | Export JSON evidence and PDF, HTML, or PNG summaries. |
-| **Local chat controls** | Use saved chats or temporary in-memory sessions. Photos are memory-only by default, with explicit opt-in retention. |
+| **A focused start** | Crop and confirm one face, then open the analysis in one action. Quality checks and conservative preparation help you review the input; the original is preserved and missing detail is not generated. |
+| **An editable visual map** | Inspect numbered landmarks, zoom up to 6×, pan, and correct points directly. Automatic points remain labelled as unreviewed until you review them. |
+| **A report with context** | Move through Overview, Measurements, Sensitivity, and Method. Reopen saved results graphically and export JSON, PDF, HTML, or PNG summaries. |
+| **A continuing conversation** | Ask about the attached image through local Qwen3-VL chat. Stream responses, stop generation, and explore curated article summaries or separately imported personal PDF passages. |
+| **Language flexibility** | Translate between Persian, English, and French using the same language model. Persian input can be translated before sending; both the original and the English sent remain available to inspect. |
+| **Comparison and continuity** | Compare 2–8 reviewed photos with user-confirmed subject labels, inspect descriptive ranges, and return to saved chats. Photo comparison does not perform identity matching. |
+| **Control over retention** | Choose saved chats or temporary in-memory sessions. Photos stay in memory by default; retaining an attachment is an explicit choice. |
 
 The main interface and assistant use **English and French**. Persian is supported through the translator and right-to-left text handling. Translation is performed through prompting, not language-model retraining.
 
 ## Two model roles, one workspace
+
+The architecture brings visual measurement and conversation together through two deployed model roles. Translation reuses the vision/chat model; the landmark and rating heads share the face engine's backbone.
 
 <details>
 <summary><strong>Under the surface — how images, models, and evidence connect</strong></summary>
@@ -112,6 +115,8 @@ There is no additional detector, restoration, embedding, OCR, age, or personalit
 </details>
 
 ## Measured progress
+
+**The ambition is reflected in experiments you can inspect.** The latest refinement targets landmark placement while preserving the existing overall-rating model. Its protocol, comparison data, and remaining limitations are documented below.
 
 The 0.14 refinement trained **only the landmark head** for 80 epochs, selecting epoch 78 using validation data. The backbone and overall-rating head stayed bitwise unchanged. Six augmented views of each of the 4,407 existing training photos produced 26,442 cached training views; **no new real photos were added**.
 
@@ -186,6 +191,8 @@ docs/          Setup, research, privacy and public screenshots
 
 ## What comes next
 
+The next chapter focuses on stronger evidence for the experience: broader evaluation, more reliable landmark placement, and a clearer path from a personal research build to a publicly distributable release.
+
 - [ ] Independent, consented evaluation across capture conditions and populations.
 - [ ] Better landmark localization and validated crop/pose handling.
 - [ ] Identity-aware evaluation splits and calibrated uncertainty.
@@ -194,11 +201,11 @@ docs/          Setup, research, privacy and public screenshots
 
 Ideas, careful bug reports, and reproducible benchmarks are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Avoid uploading real people's face photos, private documents, or chat histories in issues.
 
-### Follow a more inspectable kind of facial AI
+### Help shape the next perspective
 
-**Bring your curiosity. Follow the evidence.**
+**Better questions move the project forward.**
 
-If this direction speaks to you, **star QMA Face** and follow [QMA Labs](https://github.com/QMA-Labs). Help shape the next chapter through thoughtful issues, reproducible experiments, and honest feedback.
+If you are interested in local AI, visual interfaces, and research that can be examined, **star QMA Face** and follow [QMA Labs](https://github.com/QMA-Labs). Share a reproducible finding, challenge an assumption, or suggest a more useful interaction. Each thoughtful contribution helps define what comes next.
 
 ---
 
